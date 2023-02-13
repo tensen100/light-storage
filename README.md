@@ -4,7 +4,7 @@
 
 ### Usage 1
 ```typescript
-import { LightStorage } from '@light/storage';
+import { LightStorage } from '@liaotai/light-storage';
 
 interface User{
     name: string,
@@ -51,7 +51,7 @@ localLightStorage.setAll<Record<string, any>>({});
 
 ### Usage 2
 ```typescript
-import { LightStorage, createGenerator } from '@light/storage';
+import { LightStorage, createGenerator } from '@liaotai/light-storage';
 
 interface User{
     name: string,
@@ -82,7 +82,7 @@ userStorage.unListen(listener);
 
 ### Usage3
 ```typescript
-import { LightStorage, createFunction } from '@light/storage';
+import { LightStorage, createFunction } from @liaotai/light-storage';
 
 interface User{
     name: string,
@@ -238,7 +238,7 @@ export declare function createFunction(lightStorage: LightStorage): StorageFn;
 ## 支持Bigint
 > 由于源码需要编译成es5, 所以无法内部支持Bigint, 如果有需要可以通过如下方式支持
 ```typescript
-import { LightStorage, LightStorageConfig } from '@light/storage';
+import { LightStorage, LightStorageConfig } from '@liaotai/light-storage';
 
 class BigIntStorage extends LightStorage{
     constructor(storage: Storage, config?: LightStorageConfig) {

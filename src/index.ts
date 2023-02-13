@@ -1,5 +1,4 @@
 type Listener<T> = (oldVal: T | null, newValue: T | null) => void;
-
 type Code = (data: string) => string;
 
 export interface LightStorageConfig {
